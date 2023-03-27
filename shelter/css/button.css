@@ -1,0 +1,59 @@
+a.button {
+    display: flex;
+    background: #F1CDB3;
+    color: #292929;
+    width: 207px;
+    height: 52px;
+    padding: 12px;
+    border-radius: 100px;
+    text-decoration: none;    
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+a.button:hover {
+    background: #e6a77a;
+}
+
+a.button-rest {
+    display: flex;
+    background: #F1CDB3;
+    color: #292929;
+    width: 261px;
+    height: 52px;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 100px;
+    text-decoration: none;    
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+a.button-rest:hover {
+    background: #d8a078;
+}
+
+a.button-slider {
+    display: flex;
+    background: #fff;
+    border: 1px solid #F1CDB3;
+    color: #292929;
+    width: 187px;
+    height: 52px;
+    padding: 20px;
+    border-radius: 100px;
+    text-decoration: none;    
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+a.button-slider:hover {
+    background: #F1CDB3;
+}
+

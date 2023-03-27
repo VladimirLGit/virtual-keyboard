@@ -1,0 +1,119 @@
+.footer {
+    height: 350px;
+    background-image: url(../assets/image/footer-gradient-background.png);
+    display: flex;
+}
+
+.footer .block-contact {
+    padding: 56px 100px 128px 44px;
+}
+
+.block-contact .caption {
+    width: 280px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    /* or 45px */
+
+    letter-spacing: 0.06em;
+
+    /* color-light-xl */
+
+    color: #FFFFFF;
+}
+
+.block-contact .email {
+    display: flex;
+    margin-top: 38px;
+}
+
+.email .mail {
+    padding-left: 20px;
+    padding-top: 5px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    /* identical to box height, or 23px */
+
+    letter-spacing: 0.06em;
+
+    /* color-primary */
+
+    color: #F1CDB3;
+}
+
+.block-contact .phone {
+    display: flex;
+    margin-top: 40px;
+}
+
+.phone .number {
+    padding-left: 20px;
+    padding-top: 5px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    /* identical to box height, or 23px */
+
+    letter-spacing: 0.06em;
+
+    /* color-primary */
+
+    color: #F1CDB3;
+}
+
+.footer .block-location {
+    padding: 56px 56px 160px 60px;
+}
+
+.block-location .caption {
+    width: 278px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    /* or 45px */
+
+    letter-spacing: 0.06em;
+
+    /* color-light-xl */
+
+    color: #FFFFFF;
+}
+
+.block-location .location {
+    display: flex;
+    width: 302px;
+    margin-top: 32px;
+}
+
+.location .address {
+    padding-left: 20px;
+    padding-top: 2px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    /* identical to box height, or 23px */
+
+    letter-spacing: 0.06em;
+
+    /* color-primary */
+
+    color: #F1CDB3;
+}
+
+.footer .footer-puppy {
+    margin-top: 40px;
+    margin-left: 104px;
+    width: 300px;
+    height: 310px;
+}

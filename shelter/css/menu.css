@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "ArialRegular";  
+    src: url(../assets/fonts/ARIBL0.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+.menu {
+    list-style: none; /* remove list markers */
+    margin: 10px -23px;
+    padding-left: 0; /* remove left padding */
+  }
+  
+.item-menu a {
+    position: relative;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    /* identical to box height, or 24px */
+
+
+    /* color-light-s */
+
+    color: #FAFAFA;
+    cursor: pointer;
+    line-height: 1; /*задаём высоту строки*/
+    text-decoration: none; /*убираем подчёркивание*/
+}
+
+.item-menu {
+    float: left; /* place list items horizontally */
+    margin-right: 35px;
+    cursor: pointer;
+    line-height: 1; /*задаём высоту строки*/
+}
+
+.item-menu.active a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 100%;
+    height: 6px;
+    border-radius: 8px;
+    transform: translateX(-50%);
+    background: rgba(238,111,87,0.5);
+    z-index: 0;
+}
+
+.item-menu:not(.active) a:hover {    
+    color: aquamarine;
+}
