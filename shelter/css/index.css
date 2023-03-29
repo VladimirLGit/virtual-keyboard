@@ -272,12 +272,16 @@ header {
     color: #545454;
 }
 
-.in-addition {
+.in-addition {    
+    height: 464px;
+    background: #F6F6F6;
+}
+
+.block-addition {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 464px;
-    background: #F6F6F6;
+    padding-top: 80px;
 }
 
 .in-addition .in-addition-img {

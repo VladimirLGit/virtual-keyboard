@@ -1,9 +1,11 @@
 .footer {
     height: 350px;
-    background-image: url(../assets/image/footer-gradient-background.png);
-    display: flex;
+    background-image: url(../assets/image/footer-gradient-background.png);    
 }
 
+.block-footer {
+    display: flex;
+}
 .footer .block-contact {
     padding: 56px 100px 128px 44px;
 }

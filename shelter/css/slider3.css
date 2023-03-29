@@ -29,6 +29,10 @@ img {
     align-items: center;
 }
 
+.image-slider:hover .button-slider {
+    background-color: #F1CDB3;
+}
+
 .title-img-slider {
     font-family: 'Georgia';
     font-style: normal;
