@@ -13,9 +13,14 @@ html {
     scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */ 
 }
 
+::-webkit-scrollbar {
+    /* width: 0px;
+    display: none;
+    background: transparent; опционально */
+  }
 
 .container {
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -74,6 +79,10 @@ header {
     color: #545454;
 }
 
+.item-menu:not(.active) a:hover {    
+    color: #292929;
+}
+
 .view-slider {
     background-color: #F6F6F6;
     height: 1342px;
@@ -97,4 +106,11 @@ header {
     letter-spacing: 0.06em;
     /* color-dark-l */
     color: #545454;
+}
+
+
+@media screen and (max-width: 1270px) {
+    .container {
+        max-width: 1100px;
+    }
 }

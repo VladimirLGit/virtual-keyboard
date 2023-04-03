@@ -57,3 +57,13 @@ a.button-slider:hover {
     background: #F1CDB3;
 }
 
+@media screen and (max-width: 768px) {
+    a.button {        
+        margin-left: 123px;
+    }
+
+    a.button-rest {       
+        width: 260px;       
+        margin: 52px auto;
+    }
+}

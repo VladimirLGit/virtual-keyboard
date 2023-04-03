@@ -12,9 +12,15 @@
 html {
     scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */ 
 }
+ 
+  ::-webkit-scrollbar {
+    /* width: 0px;
+    display: none;
+    background: transparent; опционально */
+  }
 
 .container {
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -229,16 +235,19 @@ header {
     padding-left: 8px;
 }
 
-.list, .row1, .row2 {
-    /* width: 1026px; */    
+.list { 
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
-.row2 {
-    padding-left: 82px;
+.help-icons-wrapper {
+    height: 281px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 55px;
+    column-gap: 0px;
+    margin: 0 50px;
 }
 
 .item-list {
@@ -340,4 +349,211 @@ header {
     font-size: 12px;
     line-height: 18px;
     color: #B2B2B2;
+}
+
+
+@media screen and (max-width: 1270px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .not-only img {
+        width: 549px;
+        height: 564px;
+    }
+
+    .item-list {        
+        margin-left: 90px;
+    }
+
+    .header-title {
+        font-size: 44px;
+        line-height: 130%;
+    }
+
+    .content {
+        width: 380px;
+    }
+    
+    .content .text {
+        font-size: 12px;
+        line-height: 160%;
+    }
+
+    .about img {
+        margin-left: 200px;
+    }
+
+    .help-icons-wrapper {
+        margin: 0 30px;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 1110px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .not-only {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .not-only img {
+        margin-top: 100px;
+        width: 569px;
+        height: 593px;
+        margin-left: 148px;
+        margin-top: 135px;
+    }
+
+    .item-list {        
+        margin-left: 60px;
+    }
+
+    .about-content {
+        /* width: 310px;         */
+        margin-left: 70px;
+    }
+
+    
+    .about img {
+        margin-left: 60px;
+    }
+
+    .part1, .part2 {
+        font-size: 12px;
+    }
+
+    .item-list img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 30px;
+    }
+
+    .in-addition .in-addition-img {
+        /* width: 250px;
+        height: 130px; */
+    }
+
+    .in-addition-content .text {
+        /* width: 340px; */
+    }
+}
+
+
+@media screen and (max-width: 930px) {
+    .background {
+        height: 900px;
+    }
+
+    .container {
+        max-width: 768px;
+    }
+
+    .logo {
+        margin: -10px 0px;
+    }
+
+    .not-only {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .content {
+        width: 480px;
+        height: 296px;
+        margin-left: 40px;
+        padding-top: 10px;
+    }
+    
+    .content .text {
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    .about-content {
+        /* width: 250px;         */
+        margin-left: 40px;
+    }
+
+    .part1, .part2 {
+        font-size: 15px;
+    }
+
+    .in-addition-content .text {
+        /* width: 300px; */
+    }
+
+    .item-list {        
+        margin-left: 40px;
+    }
+
+    .help-icons-wrapper {
+        height: 481px;
+        row-gap: 0px;
+        column-gap: 60px;
+        margin: 0 30px;
+    }
+
+    .block-addition {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 80px;
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .background {
+        height: 1165px;
+    }
+
+    .about-content {
+        margin-left: 8px;
+        margin-top: 0px;
+    }
+
+    .about img {
+        margin-left: 16px;
+        margin-top: 80px;
+    }
+
+    .help {
+        height: 779px;
+    }
+
+    .in-addition-content {
+        height: 295px;
+        padding-left: 16px;        
+    }
+
+    .in-addition .in-addition-img {
+        margin-top: 48px;
+    }
+
+    .in-addition {
+        height: 783px;
+    }
+
 }
