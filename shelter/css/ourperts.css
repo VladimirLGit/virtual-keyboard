@@ -28,7 +28,7 @@ html {
     margin: -10px 14px;
 }
 
-.logo .title a {
+.logo .title-logo a {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -112,5 +112,20 @@ header {
 @media screen and (max-width: 1270px) {
     .container {
         max-width: 1100px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .logo {
+        margin: -10px 0px;
+    }
+
+    .view-slider {
+        height: 1733px;
     }
 }
