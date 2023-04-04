@@ -567,3 +567,330 @@ header {
     }
 
 }
+
+@media screen and (max-width: 767.2px) {
+    .not-only img {
+        margin-top: 100px;
+        width: 569px;
+        height: 593px;
+        margin-left: 0px;
+        margin-top: 135px;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .content {
+        width: 380px;
+        height: 296px;
+        margin-left: 40px;
+        padding-top: 10px;
+    }
+
+    .not-only img {
+        margin-top: 100px;
+        width: 409px;
+        height: 433px;
+        margin-left: 0px;
+        margin-top: 135px;
+    }
+
+    .about img {
+        margin-left: 0px;
+        margin-top: 80px;
+    }
+
+    .help {
+        height: 1030px;
+    }
+
+    .in-addition .in-addition-img {
+        width: 260px;
+        height: 135px;
+        margin-left: 15px;
+        margin-top: 43px;
+    }
+
+    .item-list {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .content {
+        width: 280px;
+    }
+
+    .header-title {
+        width: 100%;
+        font-size: 25px;
+        line-height: 32px;
+        margin: 0px;
+        margin-left: 42px;
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+
+    .item-list {
+        width: 130px;
+    }
+
+    .about-content {
+        width: 250px;
+    }
+
+    .not-only img {
+        margin-top: 100px;
+        width: 369px;
+        height: 393px;
+        margin-left: 0px;
+        margin-top: 135px;
+    }
+
+    .our-friends .section-title {
+        width: 300px;
+        margin-left: 0px;       
+        font-size: 30px;
+    }
+
+    .in-addition-content .text {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .not-only img {
+        margin-top: 100px;
+        width: 260px;
+        height: 271px;
+        margin-left: 50px;
+        margin-top: 116px;
+    }
+
+    .list {
+        padding-top: 60px;
+        padding-left: 0px;
+    }
+
+    .help-icons-wrapper {
+        margin: 0 0 100px 0;
+        column-gap: 10px;
+        row-gap: 55px;
+    }
+
+    .content {
+        margin-left: 0px;
+    }
+
+    .in-addition-content {
+        height: 295px;
+        padding-left: 0px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .background {
+        height: 823px;
+    }
+
+    .logo {
+        margin: -10px -10px;
+    }
+
+    .content .text {
+        font-size: 15px;
+        line-height: 24px;
+        margin: 41px 0px;
+        text-align: center;
+        padding-right: 0px;
+        margin-top: 42px;
+        width: 294px;
+    }
+
+    .about {
+        margin-top: 42px;
+    }
+
+    .about-content {
+        width: 270px;
+        margin-left: 15px;
+        margin-top: 0px;
+    }
+
+    .about .section-title {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        /* or 32px */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+
+        /* color-dark-l */
+
+        color: #545454;
+        padding-right: 0px;
+    }
+
+    .part1, .part2 {
+        padding-top: 24px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        /* or 24px */
+        
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        
+        /* color-dark-xl */
+        
+        color: #4C4C4C;
+    }
+
+    .about {
+        margin-top: 42px;
+    }
+
+    .about img {
+        margin-left: 13px;
+        margin-top: 40px;
+        width: 260px;
+        height: 353.6px;
+    }
+    
+    .our-friends .section-title {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        /* or 32px */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+
+        /* color-dark-l */
+
+        color: #545454;
+    }
+
+    .our-friends {
+        margin-top: 42px;
+        height: 791px;
+        background-color: #F6F6F6;
+    }
+
+    .our-friends .title {
+        padding-top: 41px;
+        padding-left: 30px;
+    }
+
+    .help .section-title {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        /* or 32px */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        margin-left: 16px;
+    }
+
+    .title {
+        padding-top: 41px;
+    }
+    
+    .list {
+        padding-top: 41px;
+        padding-left: 0px;
+    }
+
+    .item-list img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .item-list .title-item {
+        font-size: 15px;
+    }
+
+    .help-icons-wrapper {
+        margin: 0 0 100px 15px;
+        column-gap: 26px;
+        row-gap: 30px;
+    }
+
+    .help {
+        height: 743px;
+    }
+
+    .in-addition-content {
+        width: 300px;
+        height: 282px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 21px;
+    }
+
+    .in-addition-content .section-title {
+        width: 300px;
+        margin-top: 0px;
+        margin-bottom: -17px;
+        text-align: center;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.06em;
+        color: #545454;             
+    }
+
+    .in-addition-content .caption {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 110%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin-bottom: -17px;
+    }
+
+    .in-addition-content .text {
+        font-size: 12px;
+        line-height: 18px;
+        margin: 0 auto;
+        width: 280px;
+        height: 90px;
+        text-align: justify;
+    }
+
+    .block-addition {
+        padding-top: 42px;
+    }
+    
+    .in-addition {
+        height: 544px;
+    }
+}

@@ -67,3 +67,20 @@ a.button-slider:hover {
         margin: 52px auto;
     }
 }
+
+@media screen and (max-width: 440px) {
+    a.button {
+        margin-left: 43px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    a.button-rest {
+        width: 260px;
+        margin: 0px auto;
+        margin-top: 142px;
+        margin-left: 30px;
+    }
+}
+
+

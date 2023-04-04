@@ -56,3 +56,22 @@
     margin: 0 2px;
     line-height: 22px;
 }
+
+@media screen and (max-width: 440px) {
+    .card-number {
+        width: 300px;
+    }
+
+    .card-number input {        
+        font-size: 16px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card-number {
+        width: 273px;
+        margin-bottom: -21px;
+    }
+}
