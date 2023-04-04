@@ -28,7 +28,7 @@ html {
     margin: -10px 10px;
 }
 
-.logo .title {
+.logo .title-logo {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -183,7 +183,7 @@ header {
 
 .our-friends .section-title {
     width: 400px;
-    margin: 0 auto;
+    margin-left: 15px;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -205,7 +205,7 @@ header {
     height: 611px;
 }
 
-.help .title {
+.title {
     padding-top: 80px;
     display: flex;
     flex-direction: column;
@@ -228,6 +228,7 @@ header {
     /* color-dark-l */
 
     color: #545454;
+    margin-left: 16px;
 }
 
 .list {
@@ -241,27 +242,33 @@ header {
 }
 
 .help-icons-wrapper {
-    height: 281px;
+    /* height: 281px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 55px;
     column-gap: 0px;
-    margin: 0 50px;
+    margin: 0 50px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 118px;
+    row-gap: 55px;
+    margin: 0 87px 100px;
 }
 
 .item-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 120px;
-    margin-bottom: 55px;
+    /* margin-left: 120px;
+    margin-bottom: 55px; */
 }
 
 .item-list img {
     width: 60px;
     height: 60px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .item-list .title-item {
@@ -363,7 +370,7 @@ header {
     }
 
     .item-list {        
-        margin-left: 90px;
+        /* margin-left: 90px; */
     }
 
     .header-title {
@@ -413,7 +420,7 @@ header {
     }
 
     .item-list {        
-        margin-left: 60px;
+        /* margin-left: 60px; */
     }
 
     .about-content {
@@ -431,8 +438,8 @@ header {
     }
 
     .item-list img {
-        width: 50px;
-        height: 50px;
+        /* width: 50px;
+        height: 50px; */
         margin-bottom: 30px;
     }
 
@@ -504,14 +511,17 @@ header {
     }
 
     .item-list {        
-        margin-left: 40px;
+        width: 170px;
     }
 
     .help-icons-wrapper {
-        height: 481px;
+        /* height: 481px;
         row-gap: 0px;
         column-gap: 60px;
-        margin: 0 30px;
+        margin: 0 30px; */
+        margin: 0 0 100px 0;
+        column-gap: 60px;
+        row-gap: 55px;
     }
 
     .block-addition {
