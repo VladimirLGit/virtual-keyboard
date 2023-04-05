@@ -7,7 +7,12 @@
     text-decoration: none;
     /* text-transform: capitalize; */
     transition: .2s linear;
+    /* border: 1px solid #f00;  */
 }
+
+/* * {
+    border: 1px solid #f00; 
+} */
 
 html {
     scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */ 
@@ -98,15 +103,13 @@ header {
     font-size: 44px;
     line-height: 130%;
     /* or 57px */
-
-    display: flex;
     align-items: center;
 
     /* color-light-xl */
 
     color: #FFFFFF;
     margin-bottom: 42px;
-    padding-right: 70px;
+    /* padding-right: 70px; */
 }
 
 .content .text {
@@ -319,7 +322,7 @@ header {
     line-height: 130%;
     /* or 45px */
 
-    display: flex;
+    /* display: flex; */
     align-items: center;
     letter-spacing: 0.06em;
 
@@ -404,6 +407,10 @@ header {
         max-width: 1000px;
     }
 
+    .content {        
+        padding-top: 0px;
+    }
+
     .not-only {
         display: flex;
         flex-direction: column;
@@ -412,11 +419,15 @@ header {
     }
 
     .not-only img {
-        margin-top: 100px;
-        width: 569px;
-        height: 593px;
+        margin-top: 0px;
+        width: 369px;
+        height: 393px;
         margin-left: 148px;
-        margin-top: 135px;
+        
+    }
+
+    .title {
+        padding-top: 0px;
     }
 
     .item-list {        
@@ -574,7 +585,7 @@ header {
         width: 569px;
         height: 593px;
         margin-left: 0px;
-        margin-top: 135px;
+        margin-top: 125px;
     }
 }
 
@@ -599,6 +610,10 @@ header {
         margin-top: 80px;
     }
 
+    .about-content {
+        width: 270px;
+    }
+
     .help {
         height: 1030px;
     }
@@ -618,6 +633,7 @@ header {
 @media screen and (max-width: 440px) {
     .content {
         width: 280px;
+        margin-left: -10px;
     }
 
     .header-title {
@@ -625,7 +641,7 @@ header {
         font-size: 25px;
         line-height: 32px;
         margin: 0px;
-        margin-left: 42px;
+        margin-left: 12px;
         text-align: center;
         letter-spacing: 0.06em;
     }
@@ -662,8 +678,8 @@ header {
         margin-top: 100px;
         width: 260px;
         height: 271px;
-        margin-left: 50px;
-        margin-top: 116px;
+        margin-left: 42px;
+        margin-top: 107px;
     }
 
     .list {
@@ -678,7 +694,7 @@ header {
     }
 
     .content {
-        margin-left: 0px;
+        margin-left: -10px;
     }
 
     .in-addition-content {
@@ -700,10 +716,11 @@ header {
     .content .text {
         font-size: 15px;
         line-height: 24px;
-        margin: 41px 0px;
+        /* margin: 41px 0px; */
         text-align: center;
         padding-right: 0px;
         margin-top: 42px;
+        margin-left: 2px;
         width: 294px;
     }
 
@@ -791,7 +808,7 @@ header {
 
     .our-friends .title {
         padding-top: 41px;
-        padding-left: 30px;
+        padding-left: 0px;
     }
 
     .help .section-title {
@@ -815,7 +832,7 @@ header {
     
     .list {
         padding-top: 41px;
-        padding-left: 0px;
+        padding-left: 15px;
     }
 
     .item-list img {
@@ -829,7 +846,7 @@ header {
     }
 
     .help-icons-wrapper {
-        margin: 0 0 100px 15px;
+        margin: 0 0 100px 0px;
         column-gap: 26px;
         row-gap: 30px;
     }
@@ -849,7 +866,7 @@ header {
     }
 
     .in-addition-content .section-title {
-        width: 300px;
+        width: 270px;
         margin-top: 0px;
         margin-bottom: -17px;
         text-align: center;
@@ -858,7 +875,7 @@ header {
         font-weight: 400;
         font-size: 25px;
         line-height: 130%;
-        display: flex;
+        /* display: flex; */
         align-items: center;
         letter-spacing: 0.06em;
         color: #545454;             
