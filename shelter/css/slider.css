@@ -196,6 +196,7 @@
 @media screen and (max-width: 320px) {
     .slider-line {
         margin-top: 42px;
+        margin-left: 18px;
     }
 
     .slider-prev-next-control2 {

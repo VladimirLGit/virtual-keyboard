@@ -674,11 +674,10 @@ header {
 }
 
 @media screen and (max-width: 385px) {
-    .not-only img {
-        margin-top: 100px;
+    .not-only img {        
         width: 260px;
         height: 271px;
-        margin-left: 42px;
+        margin-left: 41px;
         margin-top: 107px;
     }
 
@@ -720,7 +719,7 @@ header {
         text-align: center;
         padding-right: 0px;
         margin-top: 42px;
-        margin-left: 2px;
+        margin-left: 1px;
         width: 294px;
     }
 
@@ -832,7 +831,7 @@ header {
     
     .list {
         padding-top: 41px;
-        padding-left: 15px;
+        padding-left: 13px;
     }
 
     .item-list img {
@@ -862,7 +861,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-left: 21px;
+        padding-left: 20px;
     }
 
     .in-addition-content .section-title {

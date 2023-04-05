@@ -347,7 +347,7 @@
     .block-info .block-location {
         padding: 0;
         margin-top: 38px;
-        margin-left: 0px;
+        margin-left: -2px;
     }
 
     .block-location .caption {
