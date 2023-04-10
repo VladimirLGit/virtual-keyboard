@@ -22,7 +22,10 @@
         <div class="subtitle">Shelter for pets in Boston</div>
       </div>
       <nav class="navigator">
-        <ul class="menu">
+        <div class="hamburger">
+          <div class="hamburger-line" id="hamburger_line"></div>
+        </div>
+        <ul class="menu" id="menu">
           <li class="item-menu active">
             <a href="#about">About the shelter</a>
           </li>
@@ -31,7 +34,11 @@
           <li class="item-menu"><a href="#footer">Contacts</a></li>
         </ul>
       </nav>
-      <div class="burger-menu"></div>
+      <div class="popup_menu" id="popup_menu">
+        <div class="burger-close">
+            <div class="hamburger-line-close" id="hamburger_line_close"></div>
+        </div>
+      </div>
     </header>
     <div class="not-only container">
       <div class="content">
@@ -76,25 +83,25 @@
   
         <div class="slider">
           <div class="slider-line">
-            <div class="image-slider image-1">
+            <div class="image-slider image-1" data-index ='3'>
               <img class="img_slider" src="assets/image/pets-katrine.png" alt="image-slider">
               <p class="title-img-slider">Katrine</p>
               <a class="button-slider">Learn more</a>
             </div>
-            <div class="image-slider image-2">
+            <div class="image-slider image-2" data-index ='2'>
               <img class="img_slider" src="assets/image/pets-jennifer.png" alt="image-slider">
               <p class="title-img-slider">Jennifer</p>
               <a class="button-slider">Learn more</a>
             </div>
-            <div class="image-slider image-3">
+            <div class="image-slider image-3" data-index ='7'>
               <img class="img_slider" src="assets/image/pets-woody.png" alt="image-slider">
               <p class="title-img-slider">Woody</p>
               <a class="button-slider">Learn more</a>
             </div>
           </div>
           <div class="slider-prev-next-control2">
-            <label></label>
-            <label></label>
+            <label class="slider-prev"></label>
+            <label class="slider-next"></label>
           </div>
           <!-- .slider-prev-next-control -->
         </div>
@@ -166,6 +173,15 @@
         </div>
       </div>
     </section>
+    <div class="pet-popup">
+      <button class="btn-close div-image"></button>
+      <div class="image-slider">
+        <img class="img_slider" src="assets/image/pets-katrine.png" alt="image-slider">
+        <p class="title-img-slider">Katrine</p>
+        <a class="button-slider">Learn more</a>
+      </div>
+  </div>
+    <div class="burger_shadow"></div>
   </main>
   <footer class="footer" id="footer">
     <div class="block-footer container">
@@ -200,5 +216,6 @@
       <img class="footer-puppy" src="assets/image/footer-puppy.png" alt="puppy">
     </div>
   </footer>
+  <script src="js/index.js"></script>
 </body>
 </html>

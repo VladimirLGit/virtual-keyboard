@@ -361,6 +361,45 @@ header {
     color: #B2B2B2;
 }
 
+.pet-popup {
+    display: none;
+    width: 295px;
+    height: 480px;
+    padding: 15px 15px 20px;
+    position: fixed;
+    z-index: 200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pet-popup.active-popup {
+    display: block;
+    background-color: ghostwhite;
+    padding: 15px 15px 20px;
+}
+
+.pet-popup.active-popup .pet__content_text {
+    height: 380px;
+    width: 236px;
+}
+
+.pet-popup .btn-close {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -26px;
+    top: -8px;
+    background-color: transparent;
+    border: none;
+    background-image: url('../assets/image/close.png');
+    filter: invert(1);
+}
+
+.pet-popup .image-slider {
+    margin-left: 0px;
+}
+
 
 @media screen and (max-width: 1270px) {
     .container {
