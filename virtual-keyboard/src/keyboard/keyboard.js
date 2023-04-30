@@ -164,7 +164,10 @@ const Keyboard = {
           keyElement.classList.add('keyboard__key');
           keyElement.innerHTML = createIconHTML('keyboard_arrow_up');
 
-          keyElement.addEventListener('click', () => {});
+          keyElement.addEventListener('click', () => {
+            this.properties.value += element.en_EN.key;
+            this._triggerEvent('oninput');
+          });
 
           break;
         //keyboard_arrow_left
@@ -172,21 +175,30 @@ const Keyboard = {
           keyElement.classList.add('keyboard__key');
           keyElement.innerHTML = createIconHTML('keyboard_arrow_left');
 
-          keyElement.addEventListener('click', () => {});
+          keyElement.addEventListener('click', () => {
+            this.properties.value += element.en_EN.key;
+            this._triggerEvent('oninput');
+          });
 
           break;
         case 'ArrowRight':
           keyElement.classList.add('keyboard__key');
           keyElement.innerHTML = createIconHTML('keyboard_arrow_right');
 
-          keyElement.addEventListener('click', () => {});
+          keyElement.addEventListener('click', () => {
+            this.properties.value += element.en_EN.key;
+            this._triggerEvent('oninput');
+          });
 
           break;
         case 'ArrowDown':
           keyElement.classList.add('keyboard__key');
           keyElement.innerHTML = createIconHTML('keyboard_arrow_down');
 
-          keyElement.addEventListener('click', () => {});
+          keyElement.addEventListener('click', () => {
+            this.properties.value += element.en_EN.key;
+            this._triggerEvent('oninput');
+          });
 
           break;
         case 'MetaLeft':
@@ -309,15 +321,31 @@ const Keyboard = {
   },
 
   findButtonByCode(key, code) {
-    this.properties.value += key;
+    // switch (code) {
+    //   case "ShiftLeft":
+    //   case "ShiftRight":
+    //   case "AltLeft":
+    //   case "AltRight":
+    //   case "ControlLeft":
+    //   case "ControlRight":        
+    //     break;
+    
+    //   default:
+    //     this.properties.value += key;
+    //     break;
+    // }
+    let index = 0;
     for (const _key of this.elements.keys) {
       if (_key.id === code) {
         _key.classList.add('keyboard__key--hovered');
+        this.properties.value += keyLayout[index].en_EN.key;
+        document.querySelector('.use-keyboard-input').value += keyLayout[index].en_EN.key;
         setTimeout(function () {
           _key.classList.remove('keyboard__key--hovered');
         }, 100);
         break;
       }
+      index++;
     }
   },
 

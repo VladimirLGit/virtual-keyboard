@@ -575,12 +575,12 @@ const keyLayout = [
   {
     keyCode: 'ArrowUp',
     ru_RU: {
-      key: '',
-      keyShift: '',
+      key: '▲',
+      keyShift: '▲',
     },
     en_EN: {
-      key: '',
-      keyShift: '',
+      key: '▲',
+      keyShift: '▲',
     },
   },
   {
@@ -674,34 +674,34 @@ const keyLayout = [
   {
     keyCode: 'ArrowLeft',
     ru_RU: {
-      key: '',
-      keyShift: '',
+      key: '◄',
+      keyShift: '◄',
     },
     en_EN: {
-      key: '',
-      keyShift: '',
+      key: '◄',
+      keyShift: '◄',
     },
   },
   {
     keyCode: 'ArrowDown',
     ru_RU: {
-      key: '',
-      keyShift: '',
+      key: '▼',
+      keyShift: '▼',
     },
     en_EN: {
-      key: '',
-      keyShift: '',
+      key: '▼',
+      keyShift: '▼',
     },
   },
   {
     keyCode: 'ArrowRight',
     ru_RU: {
-      key: '',
-      keyShift: '',
+      key: '►',
+      keyShift: '►',
     },
     en_EN: {
-      key: '',
-      keyShift: '',
+      key: '►',
+      keyShift: '►',
     },
   },
 ];
