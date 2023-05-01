@@ -47,7 +47,8 @@ const Keyboard = {
       });
     });
 
-    document.onkeydown = this.checkKeycode;
+    document.onkeydown = this.checkKeyDowncode;
+    document.onkeyup = this.checkKeyUpcode;
   },
 
   _createKeys() {
@@ -320,41 +321,48 @@ const Keyboard = {
     //this.elements.main.classList.add('keyboard--hidden');
   },
 
-  findButtonByCode(key, code) {
-    // switch (code) {
-    //   case "ShiftLeft":
-    //   case "ShiftRight":
-    //   case "AltLeft":
-    //   case "AltRight":
-    //   case "ControlLeft":
-    //   case "ControlRight":        
-    //     break;
-    
-    //   default:
-    //     this.properties.value += key;
-    //     break;
-    // }
-    let index = 0;
+  buttonDownToUpByCode(code) {
     for (const _key of this.elements.keys) {
       if (_key.id === code) {
-        _key.classList.add('keyboard__key--hovered');
-        this.properties.value += keyLayout[index].en_EN.key;
-        document.querySelector('.use-keyboard-input').value += keyLayout[index].en_EN.key;
         setTimeout(function () {
           _key.classList.remove('keyboard__key--hovered');
         }, 100);
+        break;
+      }
+    }
+  },
+
+  findButtonByCode(code) {
+    let index = 0;
+    for (const _key of this.elements.keys) {
+      if (_key.id === code) {
+        if (!_key.classList.contains('keyboard__key--hovered')) {
+          _key.classList.add('keyboard__key--hovered');
+          this.properties.value += keyLayout[index].en_EN.key;
+          document.querySelector('.use-keyboard-input').value +=
+            keyLayout[index].en_EN.key;
+        }
+
         break;
       }
       index++;
     }
   },
 
-  checkKeycode(event) {
+  checkKeyDowncode(event) {
     var key;
     //if (!event) var event = window.event;
     if (event.code) key = event.code; // для IE
     //console.log('keycode: ' + key); // Выводим сообщение
-    Keyboard.findButtonByCode(event.key, key);
+    Keyboard.findButtonByCode(key);
+  },
+
+  checkKeyUpcode(event) {
+    var key;
+    //if (!event) var event = window.event;
+    if (event.code) key = event.code; // для IE
+    //console.log('keycode: ' + key); // Выводим сообщение
+    Keyboard.buttonDownToUpByCode(key);
   },
 };
 

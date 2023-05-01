@@ -156,12 +156,12 @@ const keyLayout = [
   {
     keyCode: 'Tab',
     ru_RU: {
-      key: 'Tab',
-      keyShift: 'Tab',
+      key: '  ',
+      keyShift: '  ',
     },
     en_EN: {
-      key: 'Tab',
-      keyShift: 'Tab',
+      key: '  ',
+      keyShift: '  ',
     },
   },
   {
@@ -442,12 +442,12 @@ const keyLayout = [
   {
     keyCode: 'Enter',
     ru_RU: {
-      key: '',
-      keyShift: '',
+      key: '\n',
+      keyShift: '\n',
     },
     en_EN: {
-      key: '',
-      keyShift: '',
+      key: '\n',
+      keyShift: '\n',
     },
   },
   {
