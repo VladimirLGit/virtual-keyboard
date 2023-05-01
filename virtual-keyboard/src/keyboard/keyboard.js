@@ -252,8 +252,8 @@ const Keyboard = {
 
           keyElement.addEventListener('click', () => {
             this.properties.value += this.properties.capsLock
-              ? (this.properties.shift ? element.en_EN.key.toLowerCase() : element.en_EN.key.toUpperCase()) 
-              : (this.properties.shift ? element.en_EN.key.toUpperCase() : element.en_EN.key.toLowerCase());
+              ? (this.properties.shift ? element.en_EN.keyShift.toLowerCase() : element.en_EN.key.toUpperCase()) 
+              : (this.properties.shift ? element.en_EN.keyShift.toUpperCase() : element.en_EN.key.toLowerCase());
             this._triggerEvent('oninput');
           });
 
@@ -290,20 +290,25 @@ const Keyboard = {
 
   _toggleShift() {
     this.properties.shift = !this.properties.shift;
-
+    let index = 0;
     for (const key of this.elements.keys) {
       if (key.childElementCount === 0) {
-        if (!this.properties.capsLock && this.properties.shift) {
-          key.textContent =
-            !this.properties.capsLock && this.properties.shift
-              ? key.textContent.toUpperCase()
-              : key.textContent.toLowerCase();
-        } else
-          key.textContent =
-            this.properties.capsLock && !this.properties.shift
-              ? key.textContent.toUpperCase()
-              : key.textContent.toLowerCase();
+        key.textContent = this.properties.capsLock
+          ? (this.properties.shift ? keyLayout[index].en_EN.keyShift.toLowerCase() : keyLayout[index].en_EN.key.toUpperCase()) 
+          : (this.properties.shift ? keyLayout[index].en_EN.keyShift.toUpperCase() : keyLayout[index].en_EN.key.toLowerCase());
+
+        // if (!this.properties.capsLock && this.properties.shift) {
+        //   key.textContent =
+        //     !this.properties.capsLock && this.properties.shift
+        //       ? key.textContent.toUpperCase()
+        //       : key.textContent.toLowerCase();
+        // } else
+        //   key.textContent =
+        //     this.properties.capsLock && !this.properties.shift
+        //       ? key.textContent.toUpperCase()
+        //       : key.textContent.toLowerCase();
       }
+      index++;
     }
   },
 
@@ -352,8 +357,8 @@ const Keyboard = {
           _key.classList.add('keyboard__key--hovered');
 
           this.properties.value += this.properties.capsLock
-              ? (this.properties.shift ? keyLayout[index].en_EN.key.toLowerCase() : keyLayout[index].en_EN.key.toUpperCase()) 
-              : (this.properties.shift ? keyLayout[index].en_EN.key.toUpperCase() : keyLayout[index].en_EN.key.toLowerCase());
+              ? (this.properties.shift ? keyLayout[index].en_EN.keyShift.toLowerCase() : keyLayout[index].en_EN.key.toUpperCase()) 
+              : (this.properties.shift ? keyLayout[index].en_EN.keyShift.toUpperCase() : keyLayout[index].en_EN.key.toLowerCase());
 
           // if (this.properties.capsLock) {
           //   if (!this.properties.shift)
