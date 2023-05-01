@@ -308,7 +308,7 @@ const keyLayout = [
     },
   },
   {
-    keyCode: 'Caps_lock',
+    keyCode: 'CapsLock',
     ru_RU: {
       key: '',
       keyShift: '',

@@ -86,7 +86,7 @@ const Keyboard = {
 
           break;
 
-        case 'Caps_lock':
+        case 'CapsLock':
           keyElement.classList.add(
             'keyboard__key--wide',
             'keyboard__key--activatable',
@@ -252,8 +252,8 @@ const Keyboard = {
 
           keyElement.addEventListener('click', () => {
             this.properties.value += this.properties.capsLock
-              ? element.en_EN.key.toUpperCase()
-              : element.en_EN.key.toLowerCase();
+              ? (this.properties.shift ? element.en_EN.key.toLowerCase() : element.en_EN.key.toUpperCase()) 
+              : (this.properties.shift ? element.en_EN.key.toUpperCase() : element.en_EN.key.toLowerCase());
             this._triggerEvent('oninput');
           });
 
@@ -327,6 +327,18 @@ const Keyboard = {
         setTimeout(function () {
           _key.classList.remove('keyboard__key--hovered');
         }, 100);
+
+        switch (code) {
+          case "ShiftLeft":
+          case "ShiftRight":
+            const eventShift = new Event('mousedown');        
+            _key.dispatchEvent(eventShift);
+            break;
+        
+          default:
+            break;
+        }
+
         break;
       }
     }
@@ -335,13 +347,56 @@ const Keyboard = {
   findButtonByCode(code) {
     let index = 0;
     for (const _key of this.elements.keys) {
-      if (_key.id === code) {
+      if (_key.id === code) {        
         if (!_key.classList.contains('keyboard__key--hovered')) {
           _key.classList.add('keyboard__key--hovered');
-          this.properties.value += keyLayout[index].en_EN.key;
-          document.querySelector('.use-keyboard-input').value +=
-            keyLayout[index].en_EN.key;
+
+          this.properties.value += this.properties.capsLock
+              ? (this.properties.shift ? keyLayout[index].en_EN.key.toLowerCase() : keyLayout[index].en_EN.key.toUpperCase()) 
+              : (this.properties.shift ? keyLayout[index].en_EN.key.toUpperCase() : keyLayout[index].en_EN.key.toLowerCase());
+
+          // if (this.properties.capsLock) {
+          //   if (!this.properties.shift)
+          //     this.properties.value += keyLayout[index].en_EN.key.toUpperCase()
+          //   else
+          //     this.properties.value += keyLayout[index].en_EN.key;
+          // }
+          // else
+          // if (!this.properties.shift)
+          //   this.properties.value += keyLayout[index].en_EN.key.toUpperCase()
+          // else
+          //   this.properties.value += keyLayout[index].en_EN.key;
+        
+            switch (code) {
+              case 'ArrowUp':          
+              case 'ArrowLeft':
+              case 'ArrowRight':
+              case 'ArrowDown':
+                document.querySelector('.use-keyboard-input').value +=
+                  keyLayout[index].en_EN.key;
+                break;
+              case 'CapsLock':
+                const eventCaps = new Event('click');        
+                _key.dispatchEvent(eventCaps);
+                // setTimeout(function () {
+                //   _key.classList.remove('keyboard__key--hovered');
+                // }, 100);
+                break;
+              case "ShiftLeft":
+              case "ShiftRight":
+                const eventShift = new Event('mousedown');        
+                _key.dispatchEvent(eventShift);
+                break;
+            
+              default:
+                break;
+            }
         }
+
+        
+
+        // const event = new Event('click');        
+        // _key.dispatchEvent(event);
 
         break;
       }
